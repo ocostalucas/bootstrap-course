@@ -1,0 +1,40 @@
+body{
+    background-color: #f37520;
+}
+header{
+    margin: 2vh auto;
+
+}
+header, nav, main{
+    background-color: #fff;
+    min-height: 10vh;
+
+}
+nav, main{
+    min-height: 82vh;
+
+}
+
+/* sm  - Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    
+}
+
+/* md  - Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    
+}
+
+/* lg  - Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+    
+}
+
+/* xl - X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    
+ }
+
+/* xxl - XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+}
