@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="alert alert-success mt-2" role="alert">
+            Lorem ipsum dolor, sit amet con.
+        </div>
+        <div class="row">
+            <div class="col ">
+                <div class="alert alert-secondary">
+                    Hello World!
+                </div>
+            </div>
+            <div class="col ">
+                <div class="alert alert-primary">
+                    Hello World!
+                </div>
+            </div>
+            
+           
+            
+        </div>
+
+        <div class="row">
+            <div class="col-sm">
+                <div class="alert alert-danger">
+                    Error!
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="alert alert-warning">
+                    Warning!
+                </div>
+            </div>
+        </div>
+
+        <div class="alert alert-info"> Information <a href="http://">Link</a></div>
+
+
+        <div class="alert alert-dark">
+            <h4>Title</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi molestias ullam officiis expedita quia? Quidem repellat, voluptatibus, quos maiores culpa omnis harum quisquam qui, id odio aperiam expedita at nemo.</p>
+            <hr>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At optio cupiditate ab. Quod, dolorum unde nemo temporibus recusandae error excepturi modi! Facere modi impedit sint porro? Ipsa provident fuga autem!</p>
+        </div>
+
+
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore voluptates modi ullam nihil perspiciatis, rem recusandae ad itaque culpa reprehenderit, quia saepe earum cumque! Voluptate harum molestiae eum ipsum eligendi?
+        <botton class="close" data-dismiss="alert" aria-label="close"><span aria-hidden="true">&times;</span></botton>
+        </div>
+    </div>
+   
+    <button id="btn-close-all" type="button">Fechar todos os Alertas</button>
+              
+ 
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    <script>
+        $(()=>{
+           $('#btn-close-all').on('click', e =>{
+               $('.alert').alert('close');
+           }); 
+        });
+    </script>
+</body>
+
+</html>
