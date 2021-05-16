@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titulo</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="popover"
+            data-content="Conteúdo do popover">Mostrar popover</button>
+        <hr>
+
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="popover" title="Titulo"
+            data-content="Conteúdo do popover">Mostrar popover</button>
+
+        <hr>
+
+        <button type="button" class="btn btn-primary btn-lg" data-placement="left" data-toggle="popover" title="Titulo"
+            data-content="Conteúdo do popover">Mostrar popover</button>
+        <hr>
+        <button type="button" class="btn btn-primary btn-lg" data-placement="left" data-toggle="popover" title="Titulo"
+            data-content="Conteúdo do popover" data-trigger="focus">Mostrar popover</button>
+
+        <hr>
+        <button type="button" class="btn btn-primary btn-lg" data-placement="left" data-toggle="popover" title="Titulo"
+            data-content="Conteúdo do popover" data-trigger="hover">Mostrar popover</button>
+        <hr>
+        <button type="button" id="btn-click" class="btn btn-danger">Abrir popupover</button>
+
+    </div>
+
+
+
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    <script>
+        $(() => {
+            $('[data-toggle="popover"]').popover();
+            $('#btn-click').on('click' ,e=>{
+                $('[data-toggle="popover"]').popover('toggle');
+
+            })
+        });
+    </script>
+</body>
+
+
+</html>
